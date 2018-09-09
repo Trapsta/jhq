@@ -1,0 +1,16 @@
+{
+  "name": "hello-world-express",
+  "description": "Hello World test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "base-64": "^0.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "3.x",
+    "fs-promise": "^2.0.3",
+    "jsonframe-cheerio": "^3.0.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
