@@ -1,5 +1,13 @@
 [
     {
+        "jobTitle": "\n\nSenior Python Developer\n\n",
+        "company": "Global Land Tool Network ",
+        "source": "iHub",
+        "date": "10th Sep 2018",
+        "url": "https://ihub.co.ke/jobs/view/4508/senior-python-developer",
+        "category": "Developer"
+    },
+    {
         "jobTitle": "\n\nUnity Game Designer/ Developer\n\n",
         "company": "Maison Interactive ",
         "source": "iHub",
@@ -104,14 +112,6 @@
         "category": "Developer"
     },
     {
-        "jobTitle": "\n\nAndroid developer\n\n",
-        "company": "mHealth Kenya Ltd. ",
-        "source": "iHub",
-        "date": "17th Jul 2018",
-        "url": "https://ihub.co.ke/jobs/view/4454/android-developer",
-        "category": "Other"
-    },
-    {
         "jobTitle": "\n\nJAVA DEVELOPER\n\n",
         "company": "Magpi ",
         "source": "iHub",
@@ -160,14 +160,6 @@
         "category": "Developer"
     },
     {
-        "jobTitle": "\n\nSeeking an intermediate PHP/Laravel developer\n\n",
-        "company": "Custometrix ",
-        "source": "iHub",
-        "date": "7th Aug 2018",
-        "url": "https://ihub.co.ke/jobs/view/4477/seeking-an-intermediate-php-laravel-developer",
-        "category": "Developer"
-    },
-    {
         "jobTitle": "\n\nCreative Technologist (Part Time/Full Time)\n\n",
         "company": "MAISON INTERACTIVE ",
         "source": "iHub",
@@ -190,5 +182,13 @@
         "date": "21st Nov 2017",
         "url": "https://ihub.co.ke/jobs/view/4178/junior-quality-assurance-specialist-ict-sector",
         "category": "Other"
+    },
+    {
+        "jobTitle": "\n\nBackend Software Engineer - FinTech\n\n",
+        "company": "Spektra, Inc ",
+        "source": "iHub",
+        "date": "4th Jul 2018",
+        "url": "https://ihub.co.ke/jobs/view/4434/backend-software-engineer-fintech",
+        "category": "Developer"
     }
 ]

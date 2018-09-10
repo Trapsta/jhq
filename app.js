@@ -70,7 +70,7 @@ axios.get('https://www.fuzu.com/categories/it-software')
 
 
         var j;
-        for (j = 0; j <= lastPage; j++) {.
+        for (j = 0; j <= lastPage; j++) {
           if (j > 0) {
             var fuzUrl = "https://www.fuzu.com/categories/it-software?page=" + j;
             //console.log("getting jobs from " + fuzUrl);
