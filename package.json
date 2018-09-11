@@ -17,7 +17,7 @@
     "request-promise": "^4.2.2"
   },
   "scripts": {
-    "start": "node app",
+    "start": "node app.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   }
 }
