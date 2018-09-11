@@ -1,6 +1,6 @@
 # Jobs HQ
 
-![N|Solid](https://lh3.googleusercontent.com/JZn0FqNeJUguKA9c8uYe0C6geG5brDXGABW980C-4-O-Bdg8yphd7a_CM5f99ifIHRpfQWgD38ttCwRmx4c8=w1600-h804-rw)
+![App Screenshot](https://raw.githubusercontent.com/Trapsta/RI/master/Screenshots/jhq_home.png)
 
 Jobs HQ is a aggregated and curated web app for all tech jobs in Kenya all in one place powered by;
 
