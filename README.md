@@ -31,7 +31,7 @@ PR's are welcome.
 
 ### Todos
 
- - Fix Fuzu Jobs Company Name
+ - <strike>Fix Fuzu Jobs Company Name<strike>
  - LinkedIn Jobs API
  - Theming
  - Responsive
