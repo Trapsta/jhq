@@ -5,8 +5,12 @@
         "source": "iHub",
         "date": "10th Sep 2018",
         "url": "https://ihub.co.ke/jobs/view/4508/senior-python-developer",
+<<<<<<< HEAD
         "category": "Developer",
         "jobLikes": 0
+=======
+        "category": "Developer"
+>>>>>>> 40850738877890e6a589bf206bf482eaf83ae221
     },
     {
         "jobTitle": "\n\nUnity Game Designer/ Developer\n\n",
@@ -122,8 +126,12 @@
         "source": "iHub",
         "date": "28th Aug 2018",
         "url": "https://ihub.co.ke/jobs/view/4494/senior-software-engineer-android",
+<<<<<<< HEAD
         "category": "Developer",
         "jobLikes": 0
+=======
+        "category": "Developer"
+>>>>>>> 40850738877890e6a589bf206bf482eaf83ae221
     },
     {
         "jobTitle": "\n\nJAVA DEVELOPER\n\n",
@@ -176,8 +184,12 @@
         "source": "iHub",
         "date": "8th Aug 2018",
         "url": "https://ihub.co.ke/jobs/view/4482/senior-developer",
+<<<<<<< HEAD
         "category": "Developer",
         "jobLikes": 0
+=======
+        "category": "Developer"
+>>>>>>> 40850738877890e6a589bf206bf482eaf83ae221
     },
     {
         "jobTitle": "\n\nCreative Technologist (Part Time/Full Time)\n\n",
@@ -203,8 +215,12 @@
         "source": "iHub",
         "date": "21st Nov 2017",
         "url": "https://ihub.co.ke/jobs/view/4178/junior-quality-assurance-specialist-ict-sector",
+<<<<<<< HEAD
         "category": "Other",
         "jobLikes": 0
+=======
+        "category": "Other"
+>>>>>>> 40850738877890e6a589bf206bf482eaf83ae221
     },
     {
         "jobTitle": "\n\nBackend Software Engineer - FinTech\n\n",
@@ -212,7 +228,11 @@
         "source": "iHub",
         "date": "4th Jul 2018",
         "url": "https://ihub.co.ke/jobs/view/4434/backend-software-engineer-fintech",
+<<<<<<< HEAD
         "category": "Developer",
         "jobLikes": 0
+=======
+        "category": "Developer"
+>>>>>>> 40850738877890e6a589bf206bf482eaf83ae221
     }
 ]
