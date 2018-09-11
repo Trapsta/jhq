@@ -67,25 +67,24 @@ header h1 {
   float: left;
   margin: 0 15px;
 }
-.navbar li a {
+.navbar li button {
     position: relative;
     display: block;
     padding: 10px 15px;
     line-height: 20px;
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
+    border: 0;
+    font-weight: 400;
+    background: transparent;
 }
-
-
-/*//jobs-board//*/
 .jobs-board {
   padding: 40px 0 20px 40px;
   background-color: #fff;
   min-height: 670px;
 }
 .all-jobs-list {
-  /*max-width: 350px;*/
   counter-reset: my-counter;
   list-style: none;
   padding-left: 40px;
@@ -114,27 +113,13 @@ header h1 {
   text-align: center;
   box-shadow: 1px 1px 0 #999;
 }
-/*.job-card {
-  margin: 0 0 8px 0;
-  /*background-color: #e4e4e4;*/
-/*  padding: 3px;
-}*/
 
-
-/*.job-card .twelve {
-  display: inline-block;
-}*/
 .job-link {
-  /*vertical-align: middle;
-  display: inline-block;*/
   color: #0C0D0E; 
   text-decoration: none;
 }
-.job-details {
-  /*padding-left: 10px;*/
-}
+
 .job-link {
-  /*font-size: 1.44em;*/
   margin-bottom: 3px;
   color: #07C;
   font-weight: 400;
@@ -158,10 +143,12 @@ header h1 {
   font-style: normal;
   font-weight: 400;
 }
+.job-action .lnr {
+  cursor: pointer;
+}
 
 
 
-/*//FOOTER//*/
 footer {
   position: relative;
   min-height: 20px;

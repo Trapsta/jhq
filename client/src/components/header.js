@@ -6,52 +6,46 @@ class Header extends React.Component {
 
   constructor(props) {
     super(props);
-    //this.handleRouteChange = this.handleRouteChange.bind(this);
     this.state = {
       activeLink: "active"
     };
   }
 
 
-  // handleRouteChange(e) {
-  //   this.props.onRouteChange(e.target.value);
-  // }
-
   render() {
-    //const route = this.props.route;
 
     return(
         <header>
           <div className="row">
             <div className="three columns">
-              <img className="app-logo" src={logo} />
+              <img className="app-logo" src={logo} alt="Logo" />
               <h1 className="app-name">Jobs HQ</h1>
             </div>
             <div className="nine columns">
               <ul className="navbar">
                 <li className="main-link">
-                  <a href="#" onClick={this.props.onRouteChange}>All</a>
+                  <button onClick={this.props.onRouteChange}>All</button>
                 </li>
 
                  <li className="main-link">
-                  <a href="#" onClick={this.props.onRouteChange}>Dev</a>
+                  <button onClick={this.props.onRouteChange}>Dev</button>
                 </li>
 
 
                  <li className="main-link">
-                  <a href="#" onClick={this.props.onRouteChange}>Design</a>
+                  <button onClick={this.props.onRouteChange}>Design</button>
                 </li>
 
                  <li className="main-link">
-                  <a href="#" onClick={this.props.onRouteChange}>Marketing</a>
+                  <button onClick={this.props.onRouteChange}>Marketing</button>
                 </li>
 
                  <li className="main-link">
-                  <a href="#" onClick={this.props.onRouteChange}>Interns</a>
+                  <button onClick={this.props.onRouteChange}>Interns</button>
                 </li>
 
                  <li className="main-link">
-                  <a href="#" onClick={this.props.onRouteChange}>Others</a>
+                  <button onClick={this.props.onRouteChange}>Others</button>
                 </li>
               </ul>
             </div>

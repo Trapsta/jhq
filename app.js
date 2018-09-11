@@ -3,7 +3,7 @@ const path = require('path');
 var app = express();
 
 // Routes
-app.get('/', function(req, res) {
+app.get('/api', function(req, res) {
     res.send('Back-end is ready. Sending some cool friendly chimps over to iHub , Fuzu and LinkedIn...!');
 });
 
@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'client/build')))
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  res.sendfile(path.join(__dirname+'/client/build/index.html'));
 });
 
 
@@ -71,10 +71,9 @@ axios.get('https://www.fuzu.com/categories/it-software')
             pages.match(/\d+/g).forEach(function(i, j) {
                 mats[j] = parseInt(i);
             });
-            console.log(mats);
 
-            lastPage = mats[mats.length - 1];
-            console.log(lastPage);            
+
+            lastPage = mats[mats.length - 1];        
         }
 
 
@@ -82,19 +81,16 @@ axios.get('https://www.fuzu.com/categories/it-software')
         for (j = 0; j <= lastPage; j++) {
           if (j > 0) {
             var fuzUrl = "https://www.fuzu.com/categories/it-software?page=" + j;
-            //console.log("getting jobs from " + fuzUrl);
 
             axios.get(fuzUrl)
                 .then((response) => {
                     if (response.status === 200) {
                         const html = response.data;
                         const $ = cheerio.load(html);
-                        // let fuzuList = [];
                         $('.carton-job').each(function(i, elem) {
-                            //alerts.push({num : 3, app:'helloagain_again',message:'yet another message'});
                             fuzuList.push({
                                 jobTitle: $(this).find('h3').text(),
-                                company: $(this).find('.carton-logo.block').attr('href'), //.replace('/company/',''),
+                                company: $(this).find('.carton-logo.block').attr('href'),
                                 company2: $(this).find('.carton-logo.block').children('img').attr('alt'),
                                 source: "Fuzu",
                                 date: new Date().toLocaleDateString(),
@@ -103,25 +99,12 @@ axios.get('https://www.fuzu.com/categories/it-software')
                                 jobLikes: 0
                             });
                                 
-                            //}
                         });
 
-                        //C'mon Fuzu
-                        // let k;
-                        // for (k=0; fuzuList.length; k++) {
-                        //     //if (!fuzuList[k]['company']) {
-                        //         console.log(fuzuList[0] + k + " has no company");
-                        //     //}
-                        // }
-                        // if (!("company" in fuzuList) && !("company" in fuzuList)) {
-                        //     fuzuList["company"] = "Undisclosed";
-                        // }
-                        //fuzuList.keys(fuzuList).forEach(function(key){ fuzuList[key] = "Undisclosed" });
 
                         for (var prop in fuzuList) {
                             if (fuzuList[prop]["company"] === undefined ) {
                                 fuzuList[prop]["company"] = 'Undisclosed';
-                                //fuzuList[prop]["company2"] = 'Undisclosed';
                             } else {
                                 fuzuList[prop]["company"] = fuzuList[prop]["company"].replace('/company/','');
                                 fuzuList[prop]["company"] = fuzuList[prop]["company"].replace(/-/g, ' ');
@@ -131,14 +114,11 @@ axios.get('https://www.fuzu.com/categories/it-software')
 
                         for (var prop in fuzuList) {
                             if (fuzuList[prop]["company2"] === undefined ) {
-                                //fuzuList[prop]["company"] = 'Undisclosed';
                             } else {
                                 fuzuList[prop]["company2"] = fuzuList[prop]["company2"].replace('logo'," ");
-                                //fuzuList[prop]["company"] = fuzuList[prop]["company"].replace('-'," ");
                             }
                         }
 
-                        console.log (fuzuList[0]["company2"]);
                         const fuzuListTrimmed = fuzuList.filter(n => n != undefined)
                         fs.writeFile('./client/src/components/fuzuList.json',
                             JSON.stringify(fuzuListTrimmed, null, 4),
@@ -172,8 +152,7 @@ var getLinkedIn = function () {
     const liListTrimmed = liList.filter(n => n != undefined)
     fs.writeFile('./client/src/components/linkedin.json',
         JSON.stringify(liListTrimmed, null, 4),
-        //(err) => 
-        console.log('liList File successfully written!'))
+        (err) => console.log('LinkedIn File successfully written!'))
 }
 
 
@@ -181,6 +160,6 @@ getLinkedIn();
 
 
 
-app.listen('3000')
-console.log('Running on port 3000');
+app.listen('5000')
+console.log('Running on port 5000');
 exports = module.exports = app;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/header';
 import Jobs from './components/jobs';
-//import Dev from './components/dev';
 import Footer from './components/footer';
 import './App.css';
 
@@ -11,7 +10,6 @@ class App extends Component {
 		super(props);
 
 		this.state = {
-			// currentRoute: "all"
 		}
 
 		this.handleRoute = this.handleRoute.bind(this);
@@ -32,7 +30,6 @@ class App extends Component {
 
 	
   render() {
-  	const currentRoute = this.state.currentRoute;
 
     return (
       <div className="main-content container u-full-width">

@@ -9,7 +9,7 @@
     "axios": "^0.18.0",
     "base-64": "^0.1.0",
     "cheerio": "^1.0.0-rc.2",
-    "express": "3.x",
+    "express": "^3.21.2",
     "fs-promise": "^2.0.3",
     "jsonframe-cheerio": "^3.0.1",
     "path": "^0.12.7",
@@ -17,6 +17,7 @@
     "request-promise": "^4.2.2"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   }
 }
