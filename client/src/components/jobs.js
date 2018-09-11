@@ -27,6 +27,7 @@ class Jobs extends React.Component {
     this.filterBusiness = this.filterBusiness.bind(this);
     this.filterInterns = this.filterInterns.bind(this);
     this.showOthers = this.showOthers.bind(this);
+    this.HandleLikeJob = this.HandleLikeJob.bind(this);
   }
 
 
@@ -108,13 +109,43 @@ class Jobs extends React.Component {
 
 
   showOthers() {
-    var newJobs = this.filterJobs(allJobs, 'support');
+    //var newJobs = this.filterJobs(allJobs, 'support');
     //console.log("dev jobs " + newJobs);
+    var newJobs;
+    allJobs.forEach(function(value) {
+        if ("intern"(value) || "des"(value) || "dev"(value)) {
+            //filterTrue.push(value);
+        } else {
+            newJobs.push(value);
+        }
+    });
 
     this.setState({
       jobs: newJobs
     });
   }
+
+  
+HandleLikeJob = (e, prevState) => {
+    // access to e.target here
+    //console.log(e, data);
+    var i = e.currentTarget.dataset.id;
+    var jobs = this.state.jobs;
+    var job = jobs[i];
+    //console.log(i);
+    //var likes = job["jobLikes"];
+    //likes = likes++;
+    // this.setState({
+    //     jobs[i]["jobLikes"]: jobs
+    // });
+    job["jobLikes"] = job["jobLikes"] + 1;
+
+    this.setState({
+      jobs: jobs
+    });
+
+}
+
 
 
 
@@ -127,17 +158,17 @@ class Jobs extends React.Component {
 
     const joblist = this.state.jobs.map((job, keyIndex) =>
       
-        <li key={keyIndex} className="job-card">
-          <a className="job-link" href={job["url"]} target="_blank">
-            <div className="twelve columns">
-              <div className="job-details">
-                <h3 className="job-title">{job["jobTitle"]} <i> at </i> <span>{job["company"]}</span></h3>
-                <span className="job-action"><i className="fa fa-thumbs-up"></i></span> | 
-                <span className="job-source">By {job["source"]} </span> |
-                <span className="job-stamp"> Added {job["date"]} </span>
-              </div>
+        <li key={keyIndex} className="job-card-list-item">
+          <div className="job-card">          
+            <div className="job-title">
+                <h3 className="job-title"><a className="job-link" href={job["url"]} target="_blank">{job["jobTitle"]}</a> <span>  at {job["company2"] === undefined ? job["company"] : job["company2"] } </span></h3>
             </div>
-          </a>
+            <div className="job-meta">
+              <span className="job-action"> <span data-id={keyIndex} className="lnr lnr-thumbs-up" onClick={this.HandleLikeJob} ></span> <span className="likes-count">{job["jobLikes"] === 0 ? " No Likes" : job["jobLikes"] === 1 ?  job["jobLikes"] + " Like" : job["jobLikes"] + " Likes"} </span> | <span className="lnr lnr-envelope"></span> Email Job </span> |
+              <span className="job-source">By {job["source"]} </span> |
+              <span className="job-stamp"> Added {job["date"]} </span>
+            </div>
+          </div>          
         </li>
       );
 
@@ -146,7 +177,7 @@ class Jobs extends React.Component {
       
         <section id="jobs-board" className="jobs-board">
             <div className="row">
-              <ol>
+              <ol className="all-jobs-list">
                 {joblist}
               </ol> 
             </div>

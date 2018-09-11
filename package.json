@@ -1,8 +1,10 @@
 {
-  "name": "hello-world-express",
-  "description": "Hello World test app",
-  "version": "0.0.1",
+  "name": "jobs-hq-server",
+  "description": "All Nairobi Tech Jobs in One Place",
+  "version": "0.0.2",
   "private": true,
+  "main": "app.js",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "base-64": "^0.1.0",
@@ -10,7 +12,11 @@
     "express": "3.x",
     "fs-promise": "^2.0.3",
     "jsonframe-cheerio": "^3.0.1",
+    "path": "^0.12.7",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }
