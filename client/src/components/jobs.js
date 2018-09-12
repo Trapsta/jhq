@@ -1,14 +1,8 @@
 import React from 'react';
-//import iHub from './ihub'
 import * as iHub from './ihubList.json';
 import * as LinkedIn from './linkedin.json';
 import * as Fuzu from './fuzuList.json';
 
-
-
-// const StyledCounter = styled.div`
-//   /* ... */
-// `
 
 const allJobs = [].concat(iHub, Fuzu, LinkedIn);
 
@@ -61,12 +55,14 @@ class Jobs extends React.Component {
 
 
   filterJobs(array, string) {
-    return array.filter(o =>
-      Object.keys(o).some(k => o[k].toLowerCase().includes(string.toLowerCase())));
+    // return array.filter(o =>
+    //   Object.keys(o).some(k => o[k].toLowerCase().includes(string.toLowerCase())));
+    return array.filter( element => element.jobTitle.toLowerCase().includes(string.toLowerCase()));
+    //console.log(data_filter);
   }
 
   filterDev() {
-    var newJobs = this.filterJobs(allJobs, 'dev');
+    var newJobs = this.filterJobs(allJobs, 'dev').concat(this.filterJobs(allJobs, 'engi'));
     //console.log("dev jobs " + newJobs);
 
     this.setState({
@@ -111,14 +107,21 @@ class Jobs extends React.Component {
   showOthers() {
     //var newJobs = this.filterJobs(allJobs, 'support');
     //console.log("dev jobs " + newJobs);
-    var newJobs;
-    allJobs.forEach(function(value) {
-        if ("intern"(value) || "des"(value) || "dev"(value)) {
-            //filterTrue.push(value);
-        } else {
-            newJobs.push(value);
-        }
-    });
+    // var newJobs;
+    // allJobs.forEach(function(value) {
+    //     if ("intern"(value) || "des"(value) || "dev"(value)) {
+    //         //filterTrue.push(value);
+    //     } else {
+    //         newJobs.push(value);
+    //     }
+    // });
+
+    //filteredResult = filteredResult.filter(e => !e.selectedFields.includes("Red"))
+    var newJobs = allJobs.filter( element => !element.jobTitle.toLowerCase().includes('dev'.toLowerCase()));
+    newJobs = newJobs.filter( element => !element.jobTitle.toLowerCase().includes('des'.toLowerCase()));
+    newJobs = newJobs.filter( element => !element.jobTitle.toLowerCase().includes('intern'.toLowerCase()));
+    newJobs = newJobs.filter( element => !element.jobTitle.toLowerCase().includes('man'.toLowerCase()));
+
 
     this.setState({
       jobs: newJobs

@@ -24,28 +24,28 @@ class Header extends React.Component {
             <div className="nine columns">
               <ul className="navbar">
                 <li className="main-link">
-                  <button onClick={this.props.onRouteChange}>All</button>
+                  <a onClick={this.props.onRouteChange}>All</a>
                 </li>
 
                  <li className="main-link">
-                  <button onClick={this.props.onRouteChange}>Dev</button>
+                  <a onClick={this.props.onRouteChange}>Dev</a>
                 </li>
 
 
                  <li className="main-link">
-                  <button onClick={this.props.onRouteChange}>Design</button>
+                  <a onClick={this.props.onRouteChange}>Design</a>
                 </li>
 
                  <li className="main-link">
-                  <button onClick={this.props.onRouteChange}>Marketing</button>
+                  <a onClick={this.props.onRouteChange}>Marketing</a>
                 </li>
 
                  <li className="main-link">
-                  <button onClick={this.props.onRouteChange}>Interns</button>
+                  <a onClick={this.props.onRouteChange}>Interns</a>
                 </li>
 
                  <li className="main-link">
-                  <button onClick={this.props.onRouteChange}>Others</button>
+                  <a onClick={this.props.onRouteChange}>Others</a>
                 </li>
               </ul>
             </div>

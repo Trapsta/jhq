@@ -22,8 +22,10 @@ class App extends Component {
 
 
 	handleRoute(e) {
+		console.log(e.currentTarget.text);;
+		e.preventDefault()
 		this.setState({
-			currentRoute: e.target.text
+			currentRoute: e.currentTarget.text
 		});
 	}
 

@@ -67,17 +67,18 @@ header h1 {
   float: left;
   margin: 0 15px;
 }
-.navbar li button {
+.navbar li a {
     position: relative;
     display: block;
     padding: 10px 15px;
     line-height: 20px;
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.22em;
     border: 0;
     font-weight: 400;
     background: transparent;
+    cursor: pointer;
 }
 .jobs-board {
   padding: 40px 0 20px 40px;
