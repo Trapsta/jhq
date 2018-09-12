@@ -81,24 +81,6 @@
         "jobLikes": 0
     },
     {
-        "jobTitle": "\n\nReact Native Developer\n\n",
-        "company": "Invent Consulting Limited ",
-        "source": "iHub",
-        "date": "2nd Sep 2018",
-        "url": "https://ihub.co.ke/jobs/view/4500/react-native-developer",
-        "category": "Developer",
-        "jobLikes": 0
-    },
-    {
-        "jobTitle": "\n\nCodeIgniter Developer\n\n",
-        "company": "Invent Consulting Limited ",
-        "source": "iHub",
-        "date": "2nd Sep 2018",
-        "url": "https://ihub.co.ke/jobs/view/4499/codeigniter-developer",
-        "category": "Developer",
-        "jobLikes": 0
-    },
-    {
         "jobTitle": "\n\nPython/Django developer\n\n",
         "company": "Pawame ",
         "source": "iHub",
@@ -131,15 +113,6 @@
         "source": "iHub",
         "date": "28th Aug 2018",
         "url": "https://ihub.co.ke/jobs/view/4494/senior-software-engineer-android",
-        "category": "Developer",
-        "jobLikes": 0
-    },
-    {
-        "jobTitle": "\n\nJAVA DEVELOPER\n\n",
-        "company": "Magpi ",
-        "source": "iHub",
-        "date": "22nd Aug 2018",
-        "url": "https://ihub.co.ke/jobs/view/4492/java-developer",
         "category": "Developer",
         "jobLikes": 0
     },
@@ -213,6 +186,33 @@
         "date": "21st Nov 2017",
         "url": "https://ihub.co.ke/jobs/view/4178/junior-quality-assurance-specialist-ict-sector",
         "category": "Other",
+        "jobLikes": 0
+    },
+    {
+        "jobTitle": "\n\nBackend Software Engineer - FinTech\n\n",
+        "company": "Spektra, Inc ",
+        "source": "iHub",
+        "date": "4th Jul 2018",
+        "url": "https://ihub.co.ke/jobs/view/4434/backend-software-engineer-fintech",
+        "category": "Developer",
+        "jobLikes": 0
+    },
+    {
+        "jobTitle": "\n\nGoogle Cloud specialist\n\n",
+        "company": "Incentro ",
+        "source": "iHub",
+        "date": "21st Jun 2018",
+        "url": "https://ihub.co.ke/jobs/view/4420/google-cloud-specialist",
+        "category": "Developer",
+        "jobLikes": 0
+    },
+    {
+        "jobTitle": "\n\niOS developer (swift) (ICT sector)\n\n",
+        "company": "Incentro Africa ",
+        "source": "iHub",
+        "date": "14th Nov 2017",
+        "url": "https://ihub.co.ke/jobs/view/4174/ios-developer-swift-ict-sector",
+        "category": "Developer",
         "jobLikes": 0
     }
 ]
